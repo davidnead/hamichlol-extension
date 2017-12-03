@@ -16,13 +16,17 @@ $(function() {
             if(response.have){
                 
                 
-                var $a = $("<a>")
+				var $a = $("<a>")
                 .attr("href","https://he.wikipedia.org/wiki/" + encodeURIComponent(title) )
                 .attr("target","_blank")
-                .text(" [W] ")
-                .css('color','red');
+                .text("w ")
+                .css('color','red')
+				.css("font-size", "90%");
                 
-                $this.after($a);
+				var $sup = $("<sup>")
+				$sup.append ($a)
+			 
+                $this.after($sup);
             }
         });
         
