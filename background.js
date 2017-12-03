@@ -38,7 +38,7 @@ functions['editInHamichlol'] = function(request, sender, sendResponse){
             .attr("action","http://www.hamichlol.org.il/w/index.php?title="+ encodeURIComponent(request.title) + "&action=submit")
             .attr("method","post");
             
-            $("<input>").attr("type","hidden").attr("name","wpTextbox1").val(responseText + "\n\n{{ו}}").appendTo($form);
+            $("<input>").attr("type","hidden").attr("name","wpTextbox1").val(responseText + "\n\n{{וח}}").appendTo($form);
                         
             $form.appendTo($('body'));
             $form.submit();
